@@ -1,0 +1,11 @@
+
+
+<button (click)="addNew()"> ADD NEW MOVIE </button>
+
+<div *ngIf="addNewBtn" id="addNeW">
+<input type="text" #name placeholder="movie name" />
+<input type="text" #key placeholder="movie url" />
+<input type="text" #id placeholder="movie name" />
+
+<button (click)="sendToServer(this.id.value,this.key.value, this.name.value)"> ADD</button>
+</div>
